@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviço de Matriz de Distância</title>
+    <link rel="stylesheet" href="./contato.css"> <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+ <!-- Ícone do carrinho -->
+ <a href="#" id="openCart" class="cart-icon">
+  <i class="fa-solid fa-cart-shopping"></i>
+</a>
+  <!-- Produtos em destaque -->
+<section id="product1" class="section-p1">
+  <h2 id="bolos">Tortas</h2>
+  <p>Recheios pelo WhatsApp</p>
+  <div class="pro-container">
+
+    <!-- Produto 1 -->
+    <div class="pro">
+      <img src="./img/WhatsApp Image 2025-04-24 at 19.32.38 (2).jpeg" alt="">
+      <div class="des">
+        <span>Pequena </span>
+        <h5>2 Pacotes de Pão</h5>
+        <div class="star">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <h4>R$90,00</h4>
+      </div>
+      <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+
+ 
+
+        <!-- Produto 1 -->
+        <div class="pro">
+          <img src="./img/WhatsApp Image 2025-04-24 at 19.32.36.jpeg" alt="">
+          <div class="des">
+            <span>Média</span>
+            <h5>4 Pacotes de Pão</h5>
+            <div class="star">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4>R$160,00</h4>
+          </div>
+          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+
+        <!-- lá no final do <body>, seu modal renomeado -->
+  <div id="cartModal" class="cart-modal">
+    <span id="cartModalClose" class="cart-modal-close">&times;</span>
+    <h2 class="cart-modal-title">Seu Carrinho</h2>
+    <div id="cartModalContent" class="cart-modal-content"></div>
+    <div class="cart-modal-total">
+      <div class="cart-modal-total-title">Total</div>
+      <div id="cartModalTotalPrice" class="cart-modal-total-price">R$0,00</div>
+    </div>
+    <button class="cart-modal-btn-buy">Comprar</button>
+    <!-- Formulário de pagamento (inicia oculto) -->
+<div id="paymentForm" class="payment-form" style="display: none;">
+  <h3>Pagamento</h3>
+
+  <label for="paymentMethod">Forma de Pagamento</label>
+  <select id="paymentMethod">
+    <option value="">Selecione</option>
+    <option value="pix">PIX</option>
+    <option value="cash">Dinheiro</option>
+  </select>
+
+  <label for="deliveryAddress">Endereço de Entrega</label>
+  <input type="text" id="deliveryAddress" placeholder="Rua, número, bairro, cidade" required>
+
+  <button id="finishOrder" class="cart-modal-btn-confirm">Finalizar Compra</button>
+</div>
+
+    </div>
+   
+
+
+    <script src="./main.js"></script>
+
+  </body>
+</html>
